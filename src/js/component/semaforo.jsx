@@ -2,10 +2,7 @@ import React, { useState } from "react";
 
 const Semaforo = () => {
 
-    const [selectedColor, setSelectedColor] = useState("green");
-
-    let str = ""
-    if (selectedColor === "red") str = "glow";
+    const [selectedColor, setSelectedColor] = useState("red");
 
     return (
 
@@ -14,17 +11,17 @@ const Semaforo = () => {
             <div
                 onClick={() => setSelectedColor("red")}
                 className={
-                    "light red mb-2" + (selectedColor === "red" ? "glow" : "")
+                    "light red mb-2 " + (selectedColor === "red" ? "glow" : "")
                 } ></div>
             <div 
                 onClick={() => setSelectedColor("yellow")}
                 className={
-                    "light yellow mb-2" + (selectedColor === "yellow" ? "glow" : "")
+                    "light yellow mb-2 " + (selectedColor === "yellow" ? "glow" : "")
                 }></div>
             <div 
                 onClick={() => setSelectedColor("green")}
                 className={
-                    "light green mb-2" + (selectedColor === "green" ? "glow" : "")
+                    "light green mb-2 " + (selectedColor === "green" ? "glow" : "")
                 }></div>
 
         </div>

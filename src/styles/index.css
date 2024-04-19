@@ -4,6 +4,13 @@
     padding: 10px;
     margin: auto;
 }
+.paloSemaforo {
+    background: black;
+    height: 250px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+}
 .light {
     width: 100px;
     height: 100px;
